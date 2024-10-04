@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+<body>
+    <h1> It is a list view</h1>
+    {% include 'todo/header.html' with name="list" %}
+    {% include 'todo/footer.html' %}
+    {% block title %}List Page{% endblock %}
+
+
+{% block body %}This is list Page{% endblock %}
+</body>
+</html>

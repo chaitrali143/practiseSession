@@ -1,0 +1,12 @@
+{% extends 'shop/base.html' %}
+
+{% block body %}
+
+{% for i in t %}
+    {{i.prod_id}}
+    {{i.prod_name}}
+    <img src="{{i.prod_image.url}}" height="100px" width="100px">
+{% endfor %}
+
+
+{% endblock %}
